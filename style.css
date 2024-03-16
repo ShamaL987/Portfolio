@@ -432,7 +432,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contact-info-upper-container {
@@ -469,8 +469,8 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  margin-bottom: 10px;
-  height: 50vh;
+ 
+  height: 35vh;
   margin: 1rem 1rem;
 }
 
