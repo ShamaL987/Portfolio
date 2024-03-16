@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+   <div id ='progress'>
+      <span id ="progress-value"></span>
+   </div>
+  
+    <nav id="desktop-nav">
+      <div class="logo">Praneeth costa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Praneeth costa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Praneeth costa</h1>
+        <p  class="section__text__p1">I'm a <span class="typing"></span></p>
+
+        <p class="section__text__p2"></p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="scrollToContact()">
+            Contact Info
+            
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='http://linkedin.com/in/praneeth-costa-932626256'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ShamaL987'"
+          />
+        </div>
+        
+      </div>
+
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="#" />
+      </div>
+
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/aboutimage.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Foundation in Computing <br />Undergraduate in BEng (Hons) Software Engineering</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p> 6 months <br />Experience in Full-Stack Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an enthusiastic intern in software engineering that has a love of technology and a hunger for knowledge.
+               I'm well-versed in programming languages, including Python, JavaScript, and Java. I'm an Intermediate in web 
+               development and have built responsive websites with React.js, HTML, and CSS. I'm excited to work on creative 
+               projects , and I do best in fast-paced settings where I can use my knowledge creativity and 
+               problem-solving abilities to make an impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="navigateToExperience()"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToProjects()"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My </p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">YeildPro</h2>
+            <p>
+              "YieldPro" stands at the forefront of yield estimation application, leveraging state-of-the-art machine learning 
+              models such as the Segment Anything Model (SAM) and the Contrastive Language-Image Pretraining (CLIP) model. These cutting-edge 
+              technologies are harnessed to provide accurate and sophisticated yield estimates for agricultural purposes.</p><p>Frontend was built using React JS and backend using flask and Dockerized </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ShamaL987'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ShamaL987'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Qr-code Generator</h2>
+            <p>"QR Code Generator" is a dynamic React application designed to simplify the creation of QR codes for various purposes. With its intuitive interface and powerful functionality, this app allows users to generate QR codes for  effortlessly, making it an indispensable tool for businesses, marketers, and individuals alike using react libraries.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ShamaL987/Qr-generator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://shamal987.github.io/Qr-generator/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather app</h2>
+            <p>Weather application  is a dynamic web application built with React.js that provides real-time weather information for locations worldwide. By leveraging a weather API, this application offers users accurate and up-to-date weather forecasts infromation with just a few clicks.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ShamaL987'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ShamaL987'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-4.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"> Java Swing Shopping application</h2>
+              <p>
+                The Java Swing Shopping Application is a graphical user interface (GUI) based program that offers a seamless and user-friendly platform for customers to browse, select, and purchase products from an online store. Built using Object-Oriented Programming (OOP) concepts in Java, this application provides a robust and modular architecture, ensuring scalability, maintainability, and code reusability.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShamaL987'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShamaL987'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-5.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">React Recipe search app</h2>
+              <p>The React Recipe Search Application is a straightforward web application designed to enable users to search for recipes based on keywords. With a clean and intuitive user interface, users can quickly find recipes that match their preferences and discover new culinary inspirations. Built with React, this application offers a seamless and responsive experience across various devices, making it easy for users to access and explore a diverse selection of recipes.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShamaL987'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShamaL987/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-6.jpg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title"> React Login and Signup Page</h2>
+              <p>A React Login and Signup Page with JWT, Bcrypt, MySQL, and Node.js with Express backend is a powerful solution for implementing user authentication and account management in web applications. This setup combines the frontend capabilities of React with a robust backend built on Node.js and Express, integrating security mechanisms like JWT for token-based authentication and Bcrypt for password hashing.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShamaL987'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShamaL987'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            
+            
+          </div>
+  
+
+        
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToContact()"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:praneethcosta94@gmail.com">praneethcosta94@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://linkedin.com/in/praneeth-costa-932626256">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Praneeth Costa. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  </body>
+</html>
